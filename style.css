@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgrey;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.box{
+    max-width: 900px;
+    height: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgb(16, 24, 40);
+    border-radius: 10px;
+}
+.small{
+    font-size: 20px;
+}
+.form{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit,minmax( 200px,1fr));
+    gap: 40px;
+}
+.control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 20px;
+}
+input , select ,textarea{
+    padding-left: 6PX 10px;
+    
+    border: 1PX solid rgb(142, 125, 164);
+    border-radius: 4px;
+    font-size: 15px;
+
+}
+input:focus{
+    outline-color: black;
+}.button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button{
+    background-color: rgb(255, 3, 3);
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: antiquewhite;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: rgb(251, 253, 253);
+ border: 2px solid red;
+ color: red;
+cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.address{
+    grid-column: 1 ;
+}
+
+
